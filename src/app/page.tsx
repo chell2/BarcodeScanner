@@ -13,6 +13,8 @@ const Home = () => {
           type: 'LiveStream',
           target: document.querySelector('#interactive'),
           constraints: {
+            width: { ideal: 1280 },
+            height: { ideal: 720 },
             facingMode: 'environment', // リアカメラを使用
           },
         },
@@ -30,6 +32,9 @@ const Home = () => {
             // '2of5_reader', // 流通・倉庫
             // 'code_93_reader', // 特殊な配送情報
           ],
+        },
+        locator: {
+          patchSize: 'medium',
         },
       },
       (err: any) => {

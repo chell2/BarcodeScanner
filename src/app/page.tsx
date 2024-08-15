@@ -13,8 +13,8 @@ const Home = () => {
           type: 'LiveStream',
           target: document.querySelector('#interactive'),
           constraints: {
-            width: { ideal: 1280 },
-            height: { ideal: 720 },
+            width: { ideal: 720 },
+            height: { ideal: 540 },
             facingMode: 'environment', // リアカメラを使用
           },
         },

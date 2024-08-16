@@ -136,7 +136,7 @@ const Home = () => {
                   <small>
                     ===== Story ========
                     <br />
-                    {productInfo.description.length > 100 ? (
+                    {productInfo.description.length > 120 ? (
                       <>
                         {isExpanded
                           ? productInfo.description
@@ -147,7 +147,7 @@ const Home = () => {
                                   <br />
                                 </span>
                               ))
-                          : productInfo.description.slice(0, 100)}
+                          : productInfo.description.slice(0, 120)}
                         {!isExpanded && (
                           <span
                             id="readmore"

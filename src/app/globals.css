@@ -44,11 +44,11 @@ html, body{
 	width: 100%; height: 100%;
 	display: flex; flex-flow: wrap;
 	justify-content: space-around;
-	align-items: center;
+	align-items: start;
 }
 
 #inner{
-	width: 350px; height: 350px;
+	width: 350px; min-height: 350px;
 	margin: 0px; padding: 10px;
 	border-radius: 20px;
 	background-color: gray; color: white;
@@ -74,7 +74,34 @@ html, body{
 	top: 0px; left: 0px;
 }
 
+#info{
+	width: 100%; height: 100%; 
+	margin: 0px; padding: 10px;
+  text-align: left;
+}
+
 #result{
 	width: 100%; height: 100%; 
-	font-size: 1rem; text-align: center;
+	font-size: 0.9rem; text-align: center;
+  flex-grow: 1; 
+}
+
+#result h3{
+	font-size: 1.2rem;
+}
+
+#result img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+#readmore{
+  color: #F3D6CC;
+  cursor: pointer;
+}
+
+#readmore:hover {
+  color: #6D1101;
 }

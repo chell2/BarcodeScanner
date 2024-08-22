@@ -117,7 +117,7 @@ const Home = () => {
     <div id="container">
       <div id="inner">
         <h1>
-          <small>|||||</small> Scan Barcode <small>|||||</small>
+          <small>||||</small> Scan Barcode!! <small>||||</small>
         </h1>
         <div id="interactive" className="viewport"></div>
         {barcodeResult && (
@@ -136,7 +136,8 @@ const Home = () => {
                   <small>
                     ===== Story ========
                     <br />
-                    {productInfo.description.length > 120 ? (
+                    {/* descriptionの長さが120文字より大きい場合は略して表示 */}
+                    {productInfo.description.length > 100 ? (
                       <>
                         {isExpanded
                           ? productInfo.description
@@ -147,13 +148,21 @@ const Home = () => {
                                   <br />
                                 </span>
                               ))
-                          : productInfo.description.slice(0, 120)}
-                        {!isExpanded && (
+                          : productInfo.description.slice(0, 100)}
+                        {!isExpanded ? (
                           <span
-                            id="readmore"
+                            className="readmore"
                             onClick={() => setIsExpanded(true)}
                           >
+                            <br />
                             &nbsp;...続きをみる
+                          </span>
+                        ) : (
+                          <span
+                            className="readmore"
+                            onClick={() => setIsExpanded(false)}
+                          >
+                            &nbsp;×とじる
                           </span>
                         )}
                       </>

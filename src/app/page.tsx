@@ -46,7 +46,10 @@ const Home = () => {
             // 'code_93_reader', // 特殊な配送情報
           ],
         },
+        locate: true,
+        multiple: true,
         locator: {
+          halfSample: true,
           patchSize: 'medium',
         },
       },

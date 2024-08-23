@@ -177,9 +177,9 @@ const Home = () => {
                   </small>
                 </p>
                 <img
+                  className="mask mask-squircle"
                   src={productInfo.image}
                   alt={productInfo.name}
-                  style={{ maxWidth: '100%', height: 'auto' }}
                 />
               </div>
             ) : (

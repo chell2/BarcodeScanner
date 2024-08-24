@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
+<samp>
 
-## Getting Started
+# ADA2nd 課題
 
-First, run the development server:
+💜  No.03  メモ帳 💜
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+</samp>
+</div>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### 1.プロダクト名
 
-## Learn More
+「BEERBAN用:バーコードスキャナー」
 
-To learn more about Next.js, take a look at the following resources:
+### 2.課題内容（どんな作品？）
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- ハッカソンで開発したビール[BEERBAN](https://www.canva.com/design/DAGNho9uiao/QX6LuQQR9JsrUZRs6-_yag/view?utm_content=DAGNho9uiao&utm_campaign=designshare&utm_medium=link&utm_source=editor)のための、バーコード読み取り機能です🍺
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### 3.DEMO
 
-## Deploy on Vercel
+- https://barcode-scanner-iota-one.vercel.app/
+- テスト用バーコード
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 4.作ったアプリケーション用のIDまたはPasswordがある場合
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- なし
+
+### 5.工夫した点・こだわった点
+
+- バーコード読み取りがスムーズにいくよう工夫しているところです。
+- そして、Next.jsのApp Routerとたたかっています...
+
+### 6.難しかった点・次回トライしたいこと(又は機能)
+
+- ローカルストレージに検索結果を格納し、入力フォームに反映させる段階で詰まっています。
+取り急ぎ提出後、明日までに進めてみます。
+
+### 7.次回ミニ講義で聞きたいこと
+
+- 
+
+### 8.フリー項目（感想、シェアしたいこと等なんでも）
+- 

@@ -21,7 +21,7 @@
 ### 3.DEMO
 
 - https://barcode-scanner-iota-one.vercel.app/
-- テスト用バーコード
+- テスト用バーコード：後ほどUPします
 
 ### 4.作ったアプリケーション用のIDまたはPasswordがある場合
 

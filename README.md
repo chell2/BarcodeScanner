@@ -21,7 +21,9 @@
 ### 3.DEMO
 
 - https://barcode-scanner-iota-one.vercel.app/
-- テスト用バーコード：![1](https://raw.githubusercontent.com/chell2/kadai03_memopad/main/public/barcode_sample1.jpg) / ![2](https://raw.githubusercontent.com/chell2/kadai03_memopad/main/public/barcode_sample2.jpg) / ![3](https://raw.githubusercontent.com/chell2/kadai03_memopad/main/public/barcode_sample3.jpg) / ![4](https://raw.githubusercontent.com/chell2/kadai03_memopad/main/public/barcode_sample4.jpg)<br>
+- テスト用バーコード：<br>
+<img width="120" alt="MiseLog-logo" src="
+https://raw.githubusercontent.com/chell2/kadai03_memopad/main/public/barcode_sample1.jpg">  <img width="120" alt="MiseLog-logo" src="https://raw.githubusercontent.com/chell2/kadai03_memopad/main/public/barcode_sample2.jpg">  <img width="120" alt="MiseLog-logo" src="https://raw.githubusercontent.com/chell2/kadai03_memopad/main/public/barcode_sample3.jpg">  <img width="120" alt="MiseLog-logo" src="https://raw.githubusercontent.com/chell2/kadai03_memopad/main/public/barcode_sample4.jpg"><br>
 ※現時点ではテスト用バーコードのみ対応。最終的には、樽に貼ったバーコードを読み取って管理用DBから情報を取り出すことを想定しています。
 
 ### 4.作ったアプリケーション用のIDまたはPasswordがある場合

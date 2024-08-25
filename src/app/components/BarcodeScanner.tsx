@@ -66,6 +66,7 @@ const BarcodeScanner: React.FC<BarcodeScannerProps> = ({
 
       setScannedBarcode(code);
       onDetected(code);
+      Quagga.stop(); // データがマッチしたらスキャンを停止
 
       try {
         const product = await fetchProductInfo(code);

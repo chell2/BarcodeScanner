@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { fetchProductInfo } from '@/utils/fetchProduct';
 import Quagga from 'quagga';
 
 interface BarcodeScannerProps {
@@ -67,15 +68,9 @@ const BarcodeScanner: React.FC<BarcodeScannerProps> = ({
       onDetected(code);
 
       try {
-        const response = await fetch(`/api/products?barcode=${code}`);
-        if (response.ok) {
-          const product = await response.json();
-          onMatchFound(product); // 一致したプロダクト情報を渡す
-          Quagga.stop(); // スキャンを停止
-        } else {
-          const errorData = await response.json();
-          onError(errorData.message);
-        }
+        const product = await fetchProductInfo(code);
+        onMatchFound(product); // 一致したプロダクト情報を渡す
+        Quagga.stop(); // スキャンを停止
       } catch (err) {
         onError('An error occurred while fetching product data');
       }

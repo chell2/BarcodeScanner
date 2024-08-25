@@ -1,4 +1,4 @@
-const LOCAL_STORAGE_KEY = 'scannedProducts';
+const LOCAL_STORAGE_KEY = 'scannedProducts' as const; //as constは定数アサーション
 
 // ローカルストレージからデータを取得
 export const getFromLocalStorage = (): { name: string; brewery: string }[] => {
